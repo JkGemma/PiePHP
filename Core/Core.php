@@ -2,16 +2,38 @@
 namespace Core;
 require_once("routes.php");
 
-class Core{
+class Core {
 	
 	public function run() {
 		$url = "";
 		$tab_url = array_filter(explode("/", trim($_SERVER['REQUEST_URI'])));
-
-		array_search("PiePHP", $tab_url);
-
-		array_shift($tab_url);
-		array_shift($tab_url);
+		
+		$count_arr = count(array_keys($tab_url));
+		$stock = 0;
+		
+		for($i = 0; $i <= $count_arr; $i++){
+			if($tab_url[$i] == "PiePHP"){
+				$stock++;
+			}
+		}
+		
+		// $j = 0;
+		// var_dump($stock);
+		while($stock > 0){
+			if($tab_url[0] == "PiePHP"){
+				$stock--;
+			}
+			array_shift($tab_url);
+		}
+		// array_shift($tab_url);
+		// var_dump($tab_url);
+		// var_dump($tab_url);
+		
+		// for($j = 0; $stock != 0; $j++){
+		// 	if($tab_url[$j] == "PiePHP"){
+		// 	}
+        // 
+		// }		
 
 
 		if((count($tab_url) == 0)) {

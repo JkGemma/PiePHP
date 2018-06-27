@@ -7,8 +7,13 @@ class Core{
 	public function run() {
 		$url = "";
 		$tab_url = array_filter(explode("/", trim($_SERVER['REQUEST_URI'])));
+
+		array_search("PiePHP", $tab_url);
+
 		array_shift($tab_url);
-		
+		array_shift($tab_url);
+
+
 		if((count($tab_url) == 0)) {
 			$url = "/" ;
 		}

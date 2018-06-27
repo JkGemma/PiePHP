@@ -15,6 +15,5 @@ Router::connect('/error', ['controller' => 'error', 'action' => 'default']);
 Router::connect('/user/register', ['controller' => 'user', 'action' => 'register']);
 Router::connect('/user/login', ['controller' => 'user', 'action' => 'logIn']);
 
-Router::connect('/valentin/lol', ['controller' => 'soutenance', 'action' => 'test']);
 
 ?>

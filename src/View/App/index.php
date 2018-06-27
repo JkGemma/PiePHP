@@ -1,1 +1,1 @@
-<p>Vue par défaut du controller app</p>
+<p>AppController Default View</p>

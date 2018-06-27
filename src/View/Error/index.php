@@ -1,1 +1,1 @@
-<p>Je suis la vue default</p>
+<p>ErrorController Default View</p>

@@ -7,7 +7,9 @@ class Autoloader{
 	}
 
 	static function autoload($class){
+
 		$path = str_replace('\\', DIRECTORY_SEPARATOR, $class);
+
 		if(is_file($path.".php")) {
 			require_once($path . '.php');
 		}

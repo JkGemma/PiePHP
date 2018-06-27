@@ -1,1 +1,1 @@
-<p>Vue par défaut du controller user</p>
+<p>UserController Default View</p>

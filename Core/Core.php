@@ -17,24 +17,12 @@ class Core {
 			}
 		}
 		
-		// $j = 0;
-		// var_dump($stock);
 		while($stock > 0){
 			if($tab_url[0] == "PiePHP"){
 				$stock--;
 			}
 			array_shift($tab_url);
 		}
-		// array_shift($tab_url);
-		// var_dump($tab_url);
-		// var_dump($tab_url);
-		
-		// for($j = 0; $stock != 0; $j++){
-		// 	if($tab_url[$j] == "PiePHP"){
-		// 	}
-        // 
-		// }		
-
 
 		if((count($tab_url) == 0)) {
 			$url = "/" ;
